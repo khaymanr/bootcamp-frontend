@@ -1,0 +1,75 @@
+.stock-card-cont {
+    width: 21rem;
+    height: 13.5rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 0.75rem;
+    border-radius: 8px;
+    border-left: solid var(--positive-variation-color) 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.stock-card-cont:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.negative-variation-border {
+    border-left: solid var(--negative-variation-color) 0.25rem;
+}
+
+.stock-info-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.stock-info-cont h2,
+p {
+    margin: 0;
+}
+
+.stock-info-cont h2 {
+    font-size: 1.75rem;
+    color: var(--text-color);
+}
+
+.stock-info-cont p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-color-light);
+}
+
+.stock-value-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.stock-value-cont .value {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.stock-value-cont .variation {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    background-color: var(--positive-variation-color);
+    padding: 0.125rem 0.25rem;
+    border-radius: 4px;
+    align-self: flex-end;
+    margin-top: 4px;
+}
+
+.stock-value-cont .negative-variation {
+    background-color: var(--negative-variation-color);
+}
